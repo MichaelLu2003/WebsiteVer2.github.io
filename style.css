@@ -1,0 +1,297 @@
+body {
+    font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -20px;
+}
+
+.title-separator {
+    border-top: 1px solid #000; /* Solid line with a height of 2px */
+    margin-top: 1%; /* Space above the line */
+    margin-bottom: 0px; /* Space below the line */
+}
+
+header {
+    background: #f0f2f5;
+    color: #000000;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: -40px
+}
+
+header h1 {
+    margin: 1;
+    font-size: 2.5em !important;
+}
+
+header p {
+    margin-top: -20px;
+    color: #ddd;
+}
+
+nav {
+    background: #f0f2f5;
+    color: #353030;
+    padding: 10px 20px; /* Add padding to give some space inside the nav */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Use center for vertical alignment */
+    justify-content: space-between; /* Aligns logo to the left and nav items to the right */
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #383232;
+    display: block; /* Makes the anchor fill the li for better click area */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #dddddd;
+}
+
+.nav-logo {
+    padding-right: 0; /* Remove padding if you want the logo to be flush with the edge */
+}
+
+.nav-logo img {
+    width: 200px; /* Set the logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* This is to ensure the navigation links are on the right */
+.nav-links {
+    display: flex;
+    gap: 20px; /* This sets the space between navigation items */
+}
+
+
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Additional styles for button-like links */
+a.button {
+    background-color: #5b7db1;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #333;
+}
+
+/* Style for large screen sizes */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    nav ul li a {
+        padding: 20px 30px;
+    }
+
+    section {
+        padding: 40px;
+    }
+}
+
+.paper-link-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.paper-link-button {
+    background-color: #5b7db1; /* This matches the header color in your screenshots */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.paper-link-button:hover {
+    background-color: #333;
+}
+
+
+
+.container {
+    width: 70%; /* Adjust this percentage to control the width */
+    max-width: 1200px; /* This sets the maximum width of the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Optional: Adds some space inside the container */
+    background-color: #f0f2f5; /* Optional: Sets the background color */
+}
+
+/* Add this to each section if they are not already wrapped in the container */
+header, nav, section, footer {
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Use this class for the main content sections */
+.content-section {
+    background-color: #f4f4f4; /* Optional: Sets a different background color for content sections */
+    margin-bottom: 20px; /* Space between sections */
+    padding: 20px;
+    border-radius: 5px; /* Optional: Rounds corners of sections */
+}
+
+
+.contact-section {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This should match your body font */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Adjust as necessary to fit your layout */
+}
+
+.contact-section .names {
+    font-size: 1.2em; /* Adjust size as needed */
+    margin: 0;
+    padding: 0;
+    font-weight: bold; /* Makes the font bold */
+}
+
+.contact-section .institution {
+    font-size: 1.1em; /* Adjust size as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section .email {
+    font-size: 1em; /* Adjust size as needed */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the space between the cards */
+}
+
+.card {
+    flex: 1; /* Each card will take up equal space */
+    max-width: calc(50% - 10px); /* Adjust width for space between cards */
+    background-color: #5b7db1; /* Card background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text horizontally */
+    margin: 10px;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+    display: flex; /* Use flex layout to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin: 0;
+    padding: 20px 0; /* Padding for spacing inside the card */
+    text-align: center;
+}
+.card:hover {
+    background-color: #77a4e7; /* Change card hover color to gray */
+}
+/* Ensure the cards don't get too small on smaller screens */
+@media (max-width: 600px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+.profile {
+    display: inline-block; /* Display profiles inline */
+    width: 25%; /* Set width to 25% for 4 profiles per row */
+    text-align: center; /* Center align content */
+}
+.names {
+    color: black; /* Set text color to black */
+}
+
+#papers {
+    /* Assuming you want the papers list to take the full container width */
+    width: 100%;
+    text-align: left; /* Aligns the text to the left */
+    font-weight: normal;
+}
+
+.papers-title {
+    text-align: left;
+    margin-top: -15px;
+    /* Any other styling you need */
+}
+
+.paper {
+    /* Style your paper divs here */
+    margin-bottom: 1em; /* Add space between paper entries */
+    text-align: left; /* Aligns the text to the left */
+    font-weight: normal;
+}
+
+.paper h2 {
+    font-size: 1em; /* Keep your font size as is */
+    font-weight: normal; /* This will make the title not bold */
+    margin: 0; 
+    text-align:left;
+}
+
+.paper h2 a {
+    text-decoration: none; /* Removes underline from links */
+    color: #222222; /* Sets the text color; choose what fits your design */
+}
+
+.paper h2 a:hover {
+    text-decoration: underline; 
+}

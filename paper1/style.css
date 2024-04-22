@@ -1,0 +1,168 @@
+body {
+    font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5; /* Light gray background */
+}
+
+h1, h2, h3, p {
+    margin-bottom: 5px;
+}
+h2 {
+    font-weight: normal;
+    color: darkblue;
+}
+
+header {
+    background: #f0f2f5; /* Blue header background */
+    color: #000000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px; /* Spacing under the title */
+}
+
+nav {
+    background: #6d88a3; /* Darker blue for nav */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #000000;
+}
+
+.paper-link-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.paper-link-button {
+    background-color: #6d88a3; /* This matches the header color in your screenshots */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.paper-link-button:hover {
+    background-color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    max-width: 80%;
+    padding: 20px;
+    background-color: #fff; /* White background for container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card {
+    background: #e7e7e7;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px; /* Adjusted margin for spacing between cards */
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #d4dfe6; /* Lighter shade on hover */
+}
+
+.card h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Button styles */
+.button {
+    background-color: #3498db; /* Blue for buttons */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2874a6; /* Darker blue on hover */
+}
+
+/* Image styles */
+img {
+    max-width: 70%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Ensures that images are block-level for proper spacing */
+    margin: 30px auto; /* Centers image and adds vertical spacing */
+}
+
+/* Section division line */
+section {
+    border-bottom: 1px solid #dcdcdc; /* Light gray line */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: calc(50% - 20px); /* Adjust width for two cards side by side */
+    }
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
